@@ -1,0 +1,35 @@
+# Track only the package, its saved results and the rendered exhibits.
+# The i.i.d. and AR(1) accuracy runs refuse to start while git reports
+# changed or untracked files, so everything else stays ignored.
+/*
+!/.gitignore
+!/Project.toml
+!/Manifest.toml
+!/README.md
+!/LICENSE
+!/CITATION.cff
+!/data/
+!/scripts/
+!/src/
+!/test/
+!/Tables/
+!/Graphs/
+
+# data/ holds only flat .jld2 files. Interrupted timing runs leave
+# *.partial.jld2 checkpoints there; continue them with --resume.
+/data/*
+!/data/*.jld2
+/data/*/
+/data/*.partial.jld2
+
+# Hidden files and folders below the top level, such as the temporary
+# folders that the scripts create while they write into Graphs/.
+*/.*
+
+# Operating-system files.
+.DS_Store
+
+# Julia coverage and allocation files.
+*.jl.cov
+*.jl.*.cov
+*.jl.mem

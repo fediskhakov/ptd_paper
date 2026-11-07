@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the paper given under
+  preferred-citation.
+type: software
+title: >-
+  Replication code for "Policy-Tree Descendant Algorithm for Solving
+  Consumption–Saving Problems with a Safety Net"
+abstract: >-
+  Julia package Ptd: the policy-tree descendant (PTD) algorithm for
+  life-cycle consumption–saving problems with a consumption floor, its
+  stochastic variants PTD-SCEQ and PTD-OSA, the DC-EGM and G2EGM
+  comparators, and the scripts and saved results behind the paper's
+  tables and figures.
+authors:
+  - family-names: Liu
+    given-names: Wending
+    affiliation: Australian National University
+  - family-names: Iskhakov
+    given-names: Fedor
+    affiliation: Stony Brook University and Deakin University
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/fediskhakov/ptd_paper"
+keywords:
+  - dynamic programming
+  - life-cycle model
+  - safety net
+  - consumption floor
+  - non-convex dynamic optimization
+  - policy-tree descendant algorithm
+  - Julia
+preferred-citation:
+  type: unpublished
+  title: >-
+    Policy-Tree Descendant Algorithm for Solving Consumption–Saving
+    Problems with a Safety Net
+  authors:
+    - family-names: Liu
+      given-names: Wending
+      affiliation: Australian National University
+    - family-names: Iskhakov
+      given-names: Fedor
+      affiliation: Stony Brook University and Deakin University
+  year: 2026
+  notes: Working paper
